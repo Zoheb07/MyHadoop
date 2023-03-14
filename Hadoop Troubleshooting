@@ -1,0 +1,13 @@
+************************
+Hadoop troubleshooting
+************************
+
+Error : java.lang.Throwable: Child Error
+Reason : the memory allocated for the tasks trackers (sum of mapred.*.child.java.opt in mapred-site.xml) is more than the nodes actual memory
+Solution : <property><name>mapred.child.java.opts</name><value>-Xmx512m</value></property> 
+		add this property to mapred-site.xml
+
+---*** Websites ***---
+https://github.com/wbsg/ldif/wiki/Hadoop-troubleshooting
+http://www.cs.brandeis.edu//~cs147a/lab/hadoop-troubleshooting/
+
